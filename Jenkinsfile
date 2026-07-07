@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Package') {
             steps {
-                sh 'mvn package'
+                bat 'mvn package'
               archiveArtifacts artifacts:'target/*.jar', fingerprint:true
             }
         }
