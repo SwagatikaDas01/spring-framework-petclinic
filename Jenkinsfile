@@ -8,6 +8,7 @@ pipeline {
   tools {
     jdk "Java_home"
     maven "maven_home"
+    git "git_home"
   }
   stages {
         stage('Git Clone') {
